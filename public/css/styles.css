@@ -55,3 +55,8 @@
 .comments-title {
     margin-bottom: 45px;
 }
+
+.popular-post-img img {
+    width: 70%;
+    margin: 15px 0 25px 0;
+}

@@ -14,7 +14,7 @@ class PagesController extends Controller
         $mostComment = Post::withCount('comments')->orderBy('comments_count', 'desc')->first();
 
 //        echo '<pre>';
-//        print_r($mostComment->comments_count);
+//        print_r($posts);
 //        echo '</pre>';
 //        die('f');
 
@@ -24,11 +24,11 @@ class PagesController extends Controller
     }
 
     public function getAbout() {
-        $first = 'Goran';
-        $last = 'Vasic';
+        $first = 'Dragor';
+        $last = 'Dev';
 
         $fullname = $first . ' ' . $last;
-        $email = 'vasic@gmail.com';
+        $email = 'test@gmail.com';
 
         $data = [];
         $data['email'] = $email;
